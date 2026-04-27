@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyCook</title>
+</head>
+<body>
+    <h1>Список рецептів</h1>
+
+    {% for r in recipes %}
+        <p>
+            <a href="/recipe/{{ r.id }}">{{ r.name }}</a>
+        </p>
+    {% endfor %}
+</body>
+</html>
