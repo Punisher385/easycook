@@ -1,0 +1,16 @@
+ER DIAGRAM
+
+TABLE Recipe
+- id
+- name
+- ingredients
+- steps
+- category
+- image
+
+TABLE Favorite
+- id
+- recipe_id
+
+Зв’язок:
+Recipe 1 -> N Favorite
